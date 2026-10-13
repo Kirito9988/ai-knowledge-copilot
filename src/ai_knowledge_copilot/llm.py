@@ -23,6 +23,12 @@ class LLMService:
         )
 
         self.model = settings.model_name
+        self.chat = self.client.chats.create(
+            model=self.model,
+            config=types.GenerateContentConfig(
+                system_instruction=SYSTEM_INSTRUCTIONS,
+            ),
+        )
 
     def generate(self, user_message: str) -> str:
         if not user_message.strip():
