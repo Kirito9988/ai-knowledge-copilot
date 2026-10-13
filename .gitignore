@@ -19,3 +19,6 @@ __pycache__/
 
 # VS Code local settings
 .vscode/
+
+#normal pratice code
+.scratch/lesson_02_loops.py
