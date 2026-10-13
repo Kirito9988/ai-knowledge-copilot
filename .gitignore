@@ -21,4 +21,4 @@ __pycache__/
 .vscode/
 
 #normal pratice code
-.scratch/lesson_02_loops.py
+scratch/lesson_02_loops.py
